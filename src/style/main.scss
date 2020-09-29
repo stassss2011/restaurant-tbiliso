@@ -1,13 +1,42 @@
 @import "var";
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "fonts";
-
-@import "page";
 @import "header";
 @import "footer";
-@import "about";
-@import "dates";
-@import "subscribe";
-@import "wave-is";
-@import "partners";
+@import "index";
+@import "nav";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.center {
+  margin: 0 auto;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.mr40 {
+  margin-right: 40px;
+}
+
+.mb65 {
+  margin-bottom: 65px;
+}
+
+.mr17 {
+  margin-right: 17px;
+}

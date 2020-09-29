@@ -2,20 +2,128 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>WAVE</title>
+	<meta charset="UTF-8">
+	<title>Tbiliso</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/main.css">
 
 </head>
 
-<body>
+<body class="home">
+	<div class="home__header">
+		//= partials/_header.html
 
-    //= partials/_header.html
-    
-    //= partials/_footer.html
-    <script src="js/main-min.js"></script>
+		<h1 class="home__heading">
+			Georgia is closer than it seems
+		</h1>
+		<a href="#" class="home__link home__link-red center f-20">Замовити доставку</a>
+	</div>
+	<div class="home__about home__row">
+		<div class="home__text-wr home__about-text">
+			<span class="home__number">01</span>
+			<div class="home__text">
+				<h3 class="home__semi-heading home__semi-heading-left">
+					Про нас
+				</h3>
+				<div class="home__col">
+					<p class="home__info">
+						Головні цінності ALASKA — використовувати світові гастрономічні тренди і створювати святкову атмосферу з живою
+						музикою.
+					</p>
+					<p class="home__info">
+						ALASKA — це команда професіоналів, яка вкладає всі сили в свою справу.
+					</p>
+					<p class="home__info">
+						ALASKA — це турбота про гостей і їх дозвілля, це незабутні враження і безцінна довіра.
+					</p>
+				</div>
+				<div class="home__row">
+					<a href="#" class="home__link home__link-black f-18 mr40">Забронювати столик</a>
+					<a href="#" class="home__link home__link-red f-18">Замовити доставку</a>
+				</div>
+			</div>
+		</div>
+		<div class="home__img-wr">
+			<img src="./img/home_about_1.jpg" alt="">
+		</div>
+	</div>
+	<div class="home__menu home__row">
+		<div class="home__img-wr">
+			<img src="./img/home_about_2.jpg" alt="">
+		</div>
+		<div class="home__text-wr home__menu-text">
+			<span class="home__number">02</span>
+			<div class="home__text">
+				<h3 class="home__semi-heading home__semi-heading-right">
+					Меню
+				</h3>
+				<div class="home__col">
+					<div class="home__menu-item home__row">
+						<div class="home__menu-img">
+							<img src="./img/fork.svg" alt="">
+						</div>
+						<a href="#" class="home__menu-item-text">
+							Меню страв
+						</a>
+					</div>
+					<div class="home__menu-item home__row">
+						<div class="home__menu-img">
+							<img src="./img/knife.svg" alt="">
+						</div>
+						<a href="#" class="home__menu-item-text">
+							Меню страв на мангалі
+						</a>
+					</div>
+					<div class="home__menu-item home__row">
+						<div class="home__menu-img">
+							<img src="./img/glass.svg" alt="">
+						</div>
+						<a href="#" class="home__menu-item-text">
+							Меню напоїв
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home__contacts home__row home__row-red">
+		<div class="home__col">
+			<span class="home__number">03</span>
+			<h3 class="home__semi-heading home__semi-heading-white home__semi-heading-right home__semi-heading-bottom">
+				Контакти
+			</h3>
+		</div>
+		<div class="home__col home__col-right">
+			<p class="home__adress">
+				044 237 09 07 <br> вулиця Шота Руставелі, 16
+			</p>
+			<p class="home__work-time">
+				Пн-Пт: 09:00 - 20:00 <br> Сб-Нд: 09:00 - 20:00 
+			</p>
+			<div class="home__row">
+				<a href="https://facebook.com" class="home__link-img mr17">
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M10.7917 15.4164V21.5831H15.4167V32.3748H21.5833V21.5831H26.2083L27.75 15.4164H21.5833V12.3331C21.5833 11.9242 21.7458 11.5321 22.0349 11.243C22.324 10.9538 22.7161 10.7914 23.125 10.7914H27.75V4.62476H23.125C21.0806 4.62476 19.12 5.43688 17.6744 6.88247C16.2288 8.32807 15.4167 10.2887 15.4167 12.3331V15.4164H10.7917Z" stroke="white" stroke-width="1.68701" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</a>
+				<a href="https://instagram.com" class="home__link-img">
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M24.6667 6.16626H12.3334C8.92763 6.16626 6.16672 8.92717 6.16672 12.3329V24.6663C6.16672 28.072 8.92763 30.8329 12.3334 30.8329H24.6667C28.0725 30.8329 30.8334 28.072 30.8334 24.6663V12.3329C30.8334 8.92717 28.0725 6.16626 24.6667 6.16626Z" stroke="white" stroke-width="1.78697" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M18.5 23.1252C21.0543 23.1252 23.125 21.0546 23.125 18.5002C23.125 15.9459 21.0543 13.8752 18.5 13.8752C15.9457 13.8752 13.875 15.9459 13.875 18.5002C13.875 21.0546 15.9457 23.1252 18.5 23.1252Z" stroke="white" stroke-width="1.78697" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M25.4375 11.5627V11.5637" stroke="white" stroke-width="1.78697" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/main-min.js"></script>
 </body>
 
 </html>
