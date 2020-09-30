@@ -3,6 +3,7 @@
 @import "header";
 @import "footer";
 @import "index";
+@import "about";
 @import "nav";
 
 * {
@@ -11,11 +12,54 @@
   box-sizing: border-box;
 }
 
+.header-black {
+  .nav__link {
+    color: $text-black;
+  }
+
+  .nav__logo-link svg path {
+    fill: $text-black;
+  }
+}
+
+.header-white {
+  .nav__link {
+    color: $text-white;
+  }
+
+  .nav__logo-link svg path {
+    fill: $text-white;
+  }
+}
+
+.footer-black {
+  background-color: $black;
+
+  .footer__text {
+    color: $text-white;
+  }
+
+  .footer__link-img svg path {
+    stroke: $text-white;
+  }
+}
+
+.footer-white {
+  background-color: $white;
+
+  .footer__text {
+    color: $text-black;
+  }
+
+  .footer__link-img svg path {
+    stroke: $text-black;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
 }
-
 
 .center {
   margin: 0 auto;

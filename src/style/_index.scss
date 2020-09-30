@@ -1,4 +1,6 @@
 .home {
+  width: 100%;
+  
   &__header {
     height: 100vh;
     background-image: url(../img/home-bg.jpg);
@@ -163,6 +165,15 @@
     }
 
     align-items: center;
+  }
+
+  &__img-wr {
+    max-width: 470px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 
   &__menu-img {
