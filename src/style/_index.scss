@@ -1,6 +1,6 @@
 .home {
   width: 100%;
-  
+
   &__header {
     height: 100vh;
     background-image: url(../img/home-bg.jpg);
@@ -178,6 +178,12 @@
 
   &__menu-img {
     margin-right: 75px;
+    width: 125px;
+    height: 125px;
+
+    img {
+      width: 100%;
+    }
   }
 
   &__menu-item-text {
