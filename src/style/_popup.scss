@@ -1,0 +1,63 @@
+.book {
+  position: fixed;
+  top: 123px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 123px);
+  padding: 40px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  &__form-wr {
+    display: flex;
+    width: 831px;
+    height: 558px;
+    max-height: 100%;
+  }
+
+  &__img-wr {
+    width: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__form {
+    width: 50%;
+    padding-left: 60px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 31px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    padding-bottom: 7px;
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    text-indent: 2px;
+    color: #000;
+  }
+
+  &__button {
+    margin-top: 33px;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: none;
+  }
+}
