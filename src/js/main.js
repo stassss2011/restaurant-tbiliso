@@ -4,8 +4,6 @@ const navbarMenu = document.getElementById('navbar__menu')
 
 const scrollbarWidth = window.innerWidth - document.body.clientWidth;
 
-console.log(scrollbarWidth)
-
 headerToggler.addEventListener('click', () => {
     navbarMenu.classList.toggle('open')
     if(navbarMenu.classList.contains('open')) {
