@@ -69,7 +69,10 @@
 
   &__about {
     justify-content: space-between;
-    padding: 74px 135px;
+    padding: 74px 0;
+    width: 1170px;
+    margin: 0 auto;
+
 
     &-text {
       padding-left: 100px;
@@ -144,14 +147,12 @@
   }
 
   &__menu {
-    padding: 100px 125px 155px 135px;
+    padding: 100px 0 155px;
+    width: 1180px;
+    margin: 0 auto;
 
     &-text {
-      margin: 0 auto;
-
-      @media screen and (max-width: 1600px) {
-        margin-left: 130px;
-      }
+      margin-left: 130px;
     }
 
     .home__img-wr {
@@ -198,6 +199,7 @@
 
   &__contacts {
     padding: 100px 135px 105px;
+    justify-content: center;
   }
 
   &__adress {

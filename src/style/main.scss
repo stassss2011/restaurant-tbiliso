@@ -8,6 +8,7 @@
 @import "halls";
 @import "events";
 @import "contacts";
+@import "gallery";
 @import "nav";
 @import "popup";
 
@@ -88,4 +89,12 @@ body {
 
 .mr17 {
   margin-right: 17px;
+}
+
+
+main:not(.contacts__main) {
+  width: 1170px !important;
+  margin: 0 auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
