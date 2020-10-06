@@ -27,6 +27,11 @@
       margin-bottom: 49px;
     }
 
+    @media screen and (max-width: 575px) {
+      font-size: 32px;
+      line-height: 39px;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -46,6 +51,11 @@
 
     @media screen and (max-width: 992px) {
       flex-direction: column;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 575px) {
+      margin: 0;
     }
   }
 
@@ -56,6 +66,7 @@
 
     @media screen and (max-width: 992px) {
       flex-direction: row;
+      margin-bottom: 20px;
     }
   }
 
@@ -69,9 +80,8 @@
       min-width: 83px;
       width: 83px;
       height: 83px;
-      margin-bottom: 20px;
       margin-right: 20px;
-      
+      margin-bottom: 0;
     }
 
     img {
@@ -88,5 +98,11 @@
     text-align: center;
     text-decoration: none;
     color: $text-black;
+
+    @media screen and (max-width: 575px) {
+      text-align: left;
+      font-size: 28px;
+      line-height: 34px;
+    }
   }
 }
