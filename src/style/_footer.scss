@@ -1,6 +1,16 @@
 .footer {
   &__row {
     display: flex;
+
+    &-center {
+      align-items: center;
+      
+      @media screen and (max-width: 460px) {
+        .mr17 {
+          margin-right: 0;
+        }
+      }
+    }
   }
 
   &__col {
