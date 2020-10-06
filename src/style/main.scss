@@ -97,4 +97,15 @@ main:not(.contacts__main) {
   margin: 0 auto !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
+
+  @media screen and (max-width: 1199px) {
+    width: 100% !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }

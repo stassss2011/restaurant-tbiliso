@@ -9,11 +9,26 @@
     width: 70px;
     padding-top: 20px;
     list-style-type: none;
+
+    @media screen and (max-width: 992px) {
+      display: none !important;
+    }
   }
 
   &__logo {
     position: absolute;
     left: calc(50% - 85px);
+
+    @media screen and (max-width: 992px) {
+      left: 0;
+    }
+
+    svg {
+      @media screen and (max-width: 992px) {
+        height: 41px;
+        width: 110px;
+      }
+    }
   }
 
   &__link {
@@ -24,6 +39,10 @@
     text-decoration: none;
     color: #FFFFFF;
   }
+
+  &__navbar {
+    margin-left: auto;
+  }
 }
 
 .navbar {
@@ -31,6 +50,10 @@
   display: flex;
   padding-top: 6px;
   height: 58px;
+
+  @media screen and (max-width: 992px) {
+    height: 47px;
+  }
 
   &__link {
     display: block;
@@ -45,6 +68,15 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: #FFFFFF;
+
+    @media screen and (max-width: 992px) {
+      width: 143px;
+      margin-right: 41px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      font-size: 16px;
+      line-height: 14px;
+    }
   }
 
   &__toggler {
@@ -60,6 +92,11 @@
     border: none !important;
     background-color: #FFFFFF;
     z-index: 4;
+
+    @media screen and (max-width: 992px) {
+      width: 41px;
+      height: 41px;
+    }
   }
 
   &__collapsed {
@@ -76,6 +113,11 @@
     &.open {
       padding-right: 17px;
       transform: translateY(-36px);
+
+      @media screen and (max-width: 992px) {
+        padding-right: 0;
+        transform: translateY(-21px);
+      }
     }
   }
 

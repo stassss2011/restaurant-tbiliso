@@ -38,6 +38,10 @@
 
   &__item {
     display: flex;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
   }
 
   &__img-wr {
@@ -48,8 +52,17 @@
     width: calc(50%);
     overflow: hidden;
 
+    @media screen and (max-width: 992px) {
+      width: calc(100%);
+    }
+
     img {
       position: absolute;
+
+      @media screen and (max-width: 992px) {
+        position: relative;
+        width: 100%;
+      }
     }
   }
 
@@ -58,6 +71,12 @@
     padding: 50px 70px 50px 83px;
     height: fit-content;
     min-height: 400px;
+
+    @media screen and (max-width: 992px) {
+      width: unset;
+      min-height: unset;
+      padding: 30px 24px 28px 24px;
+    }
 
     &:first-child {
       .hall__semi-heading {
@@ -92,6 +111,12 @@
     line-height: 48px;
     text-align: right;
     color: $text-white;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 20px;
+      margin-right: 0 !important;
+      text-align: center !important;
+    }
   }
 
   &__info {

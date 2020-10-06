@@ -8,6 +8,12 @@
     background-repeat: no-repeat;
     background-position: center top;
   }
+
+  &__desktop {
+    @media screen and (max-width: 992px) {
+      display: none !important;
+    }
+  }
     
   &__heading {
     width: 737px;
@@ -21,13 +27,21 @@
     letter-spacing: 0.03em;
     color: $text-white;
     text-shadow: 6px 6px 20px #000000;
+
+    @media screen and (max-width: 992px) {
+      width: 300px;
+      font-size: 43px;
+      line-height: 46px;
+    }
   }
 
   &__link {
-    display: block;
-    min-width: 185px;
+    display: flex;
+    min-height: 52px;
+    justify-content: center;
+    align-items: center;
     width: 185px;
-    padding: 15px 9px;
+    padding: 4px 9px;
     text-decoration: none;
     color: $text-white;
     font-family: "Cormorant", serif;
@@ -35,6 +49,12 @@
     line-height: 22px;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width: 1199px) {
+      max-width: 185px;
+      width: 100%;
+      min-width: unset;
+    }
     
     &-red {
       background-color: $red;
@@ -73,11 +93,30 @@
     width: 1170px;
     margin: 0 auto;
 
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      .home__link {
+        min-width: 150px;
+        width: 150px;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+
 
     &-text {
       padding-left: 100px;
       margin-top: 55px;
       margin-right: 130px;
+
+      @media screen and (max-width: 1199px) {
+        margin-right: 100px;
+      }
     }
   }
 
@@ -151,8 +190,22 @@
     width: 1180px;
     margin: 0 auto;
 
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+
     &-text {
       margin-left: 130px;
+
+      @media screen and (max-width: 1199px) {
+        margin-left: 100px;
+      }
     }
 
     .home__img-wr {
@@ -169,8 +222,20 @@
   }
 
   &__img-wr {
-    max-width: 470px;
-    width: 100%;
+    width: 470px;
+    min-width: 470px;
+
+    @media screen and (max-width: 1199px) {
+      width: 400px;
+      min-width: 400px;
+      display: flex;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 992px) {
+      width: calc(100% - 125px);
+      margin: 0 auto;
+    }
 
     img {
       width: 100%;
@@ -181,6 +246,11 @@
     margin-right: 75px;
     width: 125px;
     height: 125px;
+
+    @media screen and (max-width: 1199px) {
+      min-width: 90px;
+      width: 90px;
+    }
 
     img {
       width: 100%;
