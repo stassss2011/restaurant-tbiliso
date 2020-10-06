@@ -3,6 +3,7 @@
 
   &__header {
     height: 100vh;
+    min-height: 568px;
     background-image: url(../img/home-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,7 +140,7 @@
 
     @media screen and (max-width: 375px) {
       padding-bottom: 15px;
-      
+
       .home__link {
         min-width: 185px;
         width: 185px;
