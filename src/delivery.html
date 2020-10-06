@@ -18,30 +18,32 @@
 
 </head>
 
-<body class="home">
-  <div class="book">
-    <div class="book__form-wr">
-      <div class="book__img-wr">
-        <img src="./img/popup-img-2.jpg" alt="">
-      </div>
-      <div class="book__form">
-        <input type="text" class="book__input" placeholder="Ім'я">
-        <input type="tel" class="book__input" placeholder="Телефон" id="phone">
-        <input type="text" class="book__input" placeholder="&#xF073;  Дата" style="font-family: FontAwesome"
-          onfocus="(this.type='date')">
-          <button type="submit" class="book__button">
-            <span class="home__link home__link-red f-18">Замовити доставку</span>
-          </button>
+<body class="home bk">
+  <div class="book__header header-white">
+    //= partials/_header.html
+    
+    <div class="book">
+      <div class="book__form-wr">
+        <div class="book__img-wr">
+          <img src="./img/popup-img-2.jpg" alt="">
+        </div>
+        <div class="book__form">
+          <div class="book__heading book__mob">
+            Доставка
+          </div>
+          <input type="text" class="book__input" placeholder="Ім'я">
+          <input type="tel" class="book__input" placeholder="Телефон" id="phone">
+          <input type="text" class="book__input" placeholder="&#xF073;  Дата" style="font-family: FontAwesome"
+            onfocus="(this.type='date')">
+            <button type="submit" class="book__button">
+              <span class="home__link home__link-red f-18">Замовити доставку</span>
+            </button>
+        </div>
       </div>
     </div>
   </div>
-  <div class="home__header header-white">
-    //= partials/_header.html
-
-    <h1 class="home__heading">
-      Georgia is closer than it seems
-    </h1>
-    <a href="#" class="home__link home__link-red center f-20">Замовити доставку</a>
+  <div class="book__mob footer-black">
+    //= partials/_footer.html
   </div>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <script src="js/main-min.js"></script>

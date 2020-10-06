@@ -8,7 +8,7 @@
     border-bottom: 5px solid #000;
   }
 
-  &-white:not(.home__header) {
+  &-white:not(.home__exact) {
     .nav__logo-link svg path {
       fill: #000;
     }

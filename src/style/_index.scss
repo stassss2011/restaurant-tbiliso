@@ -10,7 +10,7 @@
     background-position: center top;
   }
 
-  .header {
+  &:not(.bk) .header {
     background-color: unset;
     border-bottom: none;
   }
