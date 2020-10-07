@@ -17,16 +17,14 @@ headerToggler.addEventListener('click', () => {
     }
 })
 
-let phoneNumber = ''
-
-function addSpaces(initial){
-    console.log(initial)
-    /*let num = initial.replace("+380 (", "")
-    return `+380 (${initial.slice(0, 2)}) ${initial.slice(2, 5)} ${initial.slice(5, 7)} ${initial.slice(7, 9)}`
-    */
-    initial.replace("/([0-9]{3})/","\1 ");
-    initial.replace("/[0-9]{3} ([0-9]{3})/","\1 ");
-    return initial;
+if(window.innerWidth <= 992) {    
+    const swiper = new Swiper('.hall__items', {
+        slideClass: 'hall__item',
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination'
+    }
+})
 }
 
 /*

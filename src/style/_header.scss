@@ -8,9 +8,22 @@
     border-bottom: 5px solid #000;
   }
 
-  &-white:not(.home__exact) {
+  &-white:not(.home__header) {
     .nav__logo-link svg path {
       fill: #000;
+    }
+  }
+
+  &-white:not(.home__exact) {
+
+    .nav__logo-link svg path {
+      fill: #fff;
+    }
+
+    @media screen and (max-width: 992px) {
+      .nav__logo-link svg path {
+        fill: #000;
+      }
     }
   }
 }
