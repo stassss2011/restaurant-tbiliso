@@ -5,6 +5,11 @@
     display: flex;
     flex-direction: column;
     padding: 70px 135px 160px;
+
+    @media screen and (max-width: 575px) {
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
   }
 
   &__heading {
@@ -17,6 +22,12 @@
     line-height: 54px;
     text-align: center;
     color: $text-black;
+
+    @media screen and (max-width: 575px) {
+      margin-bottom: 34px;
+      font-size: 32px;
+      line-height: 39px;
+    }
 
     &::after {
       content: "";
@@ -34,12 +45,33 @@
   &__items {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
+
+  .swiper-container {
+    @media screen and (max-width: 992px) {
+     padding-bottom: 45px;
+    }
+  }
+
+  .swiper-wrapper {
+    @media screen and (max-width: 992px) {
+      max-width: 100%;
+    }
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     width: calc(33.33% - 20px);
+
+    @media screen and (max-width: 992px) {
+      max-width: 100%;
+      min-width: 100%;
+    }
   }
 
   &__img-wr {
@@ -58,6 +90,12 @@
     padding: 32px 42px 50px 53px;
     height: fit-content;
     min-height: 250px;
+
+    @media screen and (max-width: 992px) {
+      width: unset;
+      min-height: unset;
+      padding: 20px 24px 28px 24px;
+    }
 
     &:first-child {
       .hall__semi-heading {
@@ -91,6 +129,47 @@
     line-height: 39px;
     text-align: left;
     color: $text-white;
+
+    @media screen and (max-width: 575px) {
+      margin-bottom: 20px;
+      font-size: 28px;
+      line-height: 34px;
+      text-align: center;
+    } 
+  }
+
+
+  .swiper-pagination {
+    bottom: 0;
+
+    &-bullet {
+      width: 15px;
+      height: 15px;
+      background-color: $black;
+      opacity: 1;
+      
+      &:not(:last-child) {
+        margin-right: 25px !important;
+      }
+
+      &-active {
+        &:nth-child(1) {
+          background-color: #c4c4c4 !important;
+        }
+
+        &:nth-child(2) {
+          background-color: $red !important;
+        }
+
+        &:nth-child(3) {
+          background-color: $yellow !important;
+        }
+
+        &:nth-child(4) {
+          background-color: #c4c4c4 !important;
+        }
+      }
+    }
   }
 
   &__info {
@@ -101,5 +180,10 @@
     line-height: 25px;
     letter-spacing: 0.03em;
     color: $text-white;
+
+    @media screen and (max-width: 575px) {
+      font-size: 20px;
+      line-height: 24px;
+    } 
   }
 }

@@ -23,8 +23,16 @@ if(window.innerWidth <= 992) {
         slidesPerView: 1,
         pagination: {
             el: '.swiper-pagination'
-    }
-})
+        }
+    })
+
+    const swiperEvents = new Swiper('.event__items', {
+        slideClass: 'event__item',
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination'
+        }
+    })
 }
 
 /*
