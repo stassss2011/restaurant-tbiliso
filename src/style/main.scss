@@ -5,7 +5,12 @@
 @import "index";
 @import "about";
 @import "menu";
+@import "halls";
+@import "events";
+@import "contacts";
+@import "gallery";
 @import "nav";
+@import "popup";
 
 * {
   padding: 0;
@@ -74,6 +79,10 @@ body {
   font-size: 18px;
 }
 
+.mr35 {
+  margin-right: 35px;
+}
+
 .mr40 {
   margin-right: 40px;
 }
@@ -84,4 +93,23 @@ body {
 
 .mr17 {
   margin-right: 17px;
+}
+
+
+main:not(.contacts__main) {
+  width: 1170px !important;
+  margin: 0 auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  @media screen and (max-width: 1199px) {
+    width: 100% !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }

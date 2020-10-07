@@ -1,3 +1,32 @@
 .header {
   margin: 30px 135px;
+
+  @media screen and (max-width: 992px) {
+    margin: 0;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 5px solid #000;
+  }
+
+  &-white:not(.home__header) {
+    .nav__logo-link svg path {
+      fill: #000;
+    }
+  }
+
+  &-white:not(.home__exact) {
+
+    .nav__logo-link svg path {
+      fill: #fff;
+    }
+
+    @media screen and (max-width: 992px) {
+      .nav__logo-link svg path {
+        fill: #000;
+      }
+    }
+  }
 }
+
+
+
