@@ -88,9 +88,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     img {
       width: 100%;
+      cursor: pointer;
+      transition: opacity ease 0.5s;
+
+      &:hover {
+        opacity: 0.9;
+      }
 
       @media screen and (max-width: 1200px) {
         width: unset;
@@ -139,7 +146,11 @@
     }
   }
 
-  &__link-img svg path {
-    stroke: #000;
+  &__link-img svg {
+    cursor: pointer;
+    path {
+      cursor: pointer;
+      stroke: #000;
+    }
   }
 }

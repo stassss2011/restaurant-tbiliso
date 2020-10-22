@@ -18,6 +18,20 @@
   &__logo {
     position: absolute;
     left: calc(50% - 85px);
+    cursor: pointer;
+    transition: opacity ease 0.5s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    svg {
+      cursor: pointer;
+
+      path {
+        cursor: pointer;
+      }
+    }
 
     @media screen and (max-width: 992px) {
       left: 0;

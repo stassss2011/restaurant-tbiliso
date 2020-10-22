@@ -75,6 +75,7 @@
     width: 228px;
     height: 228px;
     margin-bottom: 41px;
+    cursor: pointer;
 
     @media screen and (max-width: 992px) {
       min-width: 83px;
@@ -86,6 +87,7 @@
 
     img {
       width: 100%;
+      cursor: pointer;
     }
   }
 

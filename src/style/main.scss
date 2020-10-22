@@ -43,7 +43,7 @@
   background-color: $black;
 
   .footer__text {
-    color: $text-white;
+    color: $text-white !important;
   }
 
   .footer__link-img svg path {
@@ -55,7 +55,7 @@
   background-color: $white;
 
   .footer__text {
-    color: $text-black;
+    color: $text-black !important;
   }
 
   .footer__link-img svg path {
@@ -117,7 +117,7 @@ main:not(.contacts__main) {
 
 a, button {
   transition: opacity ease 0.4s;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 a:hover, button:hover {
